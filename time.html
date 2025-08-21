@@ -11,8 +11,7 @@
     <div style="min-height: 100vh; background-color: black; display: flex; align-items: center; justify-content: center; flex-direction: column;">
         <h1 style="color: #f0f4f1;" id="time"></h1>
     </div>
-</body>
-<script>
+    <script>
     getime=()=>{
         const date= new Date()
         let h= date.getHours()
@@ -29,9 +28,11 @@
     }
     // console.log(gettime());
     
-    setTimeout(() => {
+    setInterval(() => {
         getime()
-    }, 1000);
+    }, );
     getime()
 </script>
+</body>
+
 </html>

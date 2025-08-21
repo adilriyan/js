@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+<body>
+          <div  style="min-height: 100vh;"class="d-flex align-items-center justify-content-center flex-column">
+        <h1 class="text-success">NOTE APPLICATION</h1>
+        <div class="d-flex align-items-center justify-content-center mt-5">
+<div class="container text-center">
+  <div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+  <div class="row">
+    <div class="col-8">col-8</div>
+    <div class="col-4">col-4</div>
+  </div>
+</div>            <button onclick="addnote()" class="btn btn-primary ms-3">ADD</button>
+
+        </div>
+        <ol id="out" class="text-center fw-bold"></ol>
+      </div>
+</body>
+<script>
+    const addnote=()=>{
+        const ch=document.getElementById('note')
+        const out=document.getElementById('out')
+
+      if (note.value) {
+        const noteText = ch.value;
+       out.innerHTML+=`<li>${noteText}</li> `
+      } else {
+         out.style.color="red"
+                out.innerHTML=" enter the note"
+      }
+    }
+</script>
+</html>
